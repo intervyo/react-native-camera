@@ -493,6 +493,7 @@ public class RNCameraView extends CameraView implements LifecycleEventListener, 
     }
     if (!mIsPaused && isCameraOpened()) {
       mIsPaused = true;
+      stopRecording();
       stop();
     }
   }
